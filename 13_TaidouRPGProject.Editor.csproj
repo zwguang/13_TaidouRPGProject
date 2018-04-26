@@ -322,6 +322,9 @@
     <Reference Include="Common">
       <HintPath>Assets\Plugins\Common.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="13_TaidouRPGProject.csproj">
@@ -345,6 +348,7 @@
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
     <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+    <None Include="Assets\Model\villarger_B_Boy\ReadMe [V 1.4]  02 06.txt" />
     <None Include="Assets\Textures\005-number combo\number_font.fnt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

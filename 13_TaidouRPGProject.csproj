@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -325,18 +327,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTweenPro\DOTweenAnimation.cs" />
+    <Compile Include="Assets\Model\villarger_B_Boy\scripts\characterRotate.cs" />
+    <Compile Include="Assets\Model\villarger_B_Boy\scripts\PlayAnimation.cs" />
+    <Compile Include="Assets\Scripts\Const\Const.cs" />
     <Compile Include="Assets\Scripts\GameFacade.cs" />
     <Compile Include="Assets\Scripts\Manager\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Manager\BaseManager.cs" />
     <Compile Include="Assets\Scripts\Manager\RequestManager.cs" />
     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Model\ServerItem.cs" />
+    <Compile Include="Assets\Scripts\Other\CloudMove.cs" />
+    <Compile Include="Assets\Scripts\Other\MouseRotation.cs" />
+    <Compile Include="Assets\Scripts\Other\HeadImage.cs" />
     <Compile Include="Assets\Scripts\Request\BaseRequest.cs" />
     <Compile Include="Assets\Scripts\Request\LoginRequest.cs" />
     <Compile Include="Assets\Scripts\UIPanel\BasePanel.cs" />
+    <Compile Include="Assets\Scripts\UIPanel\CharacterSelectPanel.cs" />
+    <Compile Include="Assets\Scripts\UIPanel\CharacterShowPanel.cs" />
     <Compile Include="Assets\Scripts\UIPanel\GamePanel.cs" />
     <Compile Include="Assets\Scripts\UIPanel\LoginPanel.cs" />
     <Compile Include="Assets\Scripts\UIPanel\MessagePanel.cs" />
     <Compile Include="Assets\Scripts\UIPanel\RegisterPanel.cs" />
+    <Compile Include="Assets\Scripts\UIPanel\ServerPanel.cs" />
     <Compile Include="Assets\Scripts\UIPanel\StartPanel.cs" />
     <Compile Include="Assets\UIFramework\Extension\DictionaryExtension.cs" />
     <Compile Include="Assets\UIFramework\UIPanel\UIPanelInfo.cs" />
@@ -355,6 +367,7 @@
     <None Include="Assets\Demigiant\DemiLib\Core\DemiLib.xml" />
     <None Include="Assets\Demigiant\DemiLib\Core\Editor\DemiEditor.xml" />
     <None Include="Assets\Demigiant\readme_DOTweenPro.txt" />
+    <None Include="Assets\Model\villarger_B_Boy\ReadMe [V 1.4]  02 06.txt" />
     <None Include="Assets\Textures\005-number combo\number_font.fnt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

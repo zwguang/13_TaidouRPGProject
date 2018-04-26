@@ -164,13 +164,10 @@ public class UIManager: BaseManager
         }
         msgPanel.ShowMessageSync(msg);
     }
-    /// <summary>
-    /// just for test
-    /// </summary>
-    //public void Test()
-    //{
-    //    string path ;
-    //    panelPathDict.TryGetValue(UIPanelType.Knapsack,out path);
-    //    Debug.Log(path);
-    //}
+
+    public void SetServer(string name, Color color)
+    {
+        StartPanel panel = GetPanel(UIPanelType.Start) as StartPanel;
+        panel.SetServer(name, color);
+    }
 }

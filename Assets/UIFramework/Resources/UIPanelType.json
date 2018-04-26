@@ -13,6 +13,15 @@
 {"panelTypeString":"Register",
 "path":"UIPanel/RegisterPanel"},
 
+{"panelTypeString":"Server",
+"path":"UIPanel/ServerPanel"},
+
+{"panelTypeString":"CharacterSelect",
+"path":"UIPanel/CharacterSelectPanel"},
+
+{"panelTypeString":"CharacterShow",
+"path":"UIPanel/CharacterShowPanel"},
+
 {"panelTypeString":"RoomList",
 "path":"UIPanel/RoomListPanel"},
 

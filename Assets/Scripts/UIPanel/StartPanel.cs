@@ -16,8 +16,8 @@ public class StartPanel : BasePanel {
         m_startBtn = transform.Find("Btn_start").GetComponent<Button>();
 
         m_userBtn.onClick.AddListener(OnUserBtnClick);
-        m_userBtn.onClick.AddListener(OnServerBtnClick);
-        m_userBtn.onClick.AddListener(OnStartBtnClick);
+        m_serverBtn.onClick.AddListener(OnServerBtnClick);
+        m_startBtn.onClick.AddListener(OnStartBtnClick);
     }
 
     public override void OnEnter()
@@ -36,7 +36,7 @@ public class StartPanel : BasePanel {
     }
     public override void OnPause()
     {
-        StartCoroutine(HidePanel());
+        gameObject.SetActive(false);
     }
 
     private void OnUserBtnClick()
@@ -45,16 +45,24 @@ public class StartPanel : BasePanel {
     }
     private void OnServerBtnClick()
     {
-
+        uiMng.PushPanel(UIPanelType.Server);
     }
     private void OnStartBtnClick()
     {
+        uiMng.PushPanel(UIPanelType.CharacterSelect);
 
+    }
+
+    public void SetServer(string name, Color color)
+    {
+        Text text = m_serverBtn.gameObject.transform.Find("Text").GetComponent<Text>();
+        text.text = name;
+        text.color = color;
     }
 
     IEnumerator HidePanel()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.1f);
         gameObject.SetActive(false);
     } 
 }

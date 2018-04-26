@@ -17,9 +17,9 @@ public class GameFacade : MonoBehaviour {
         }
     }
 
-    private UIManager m_uiMng;
-    private AudioManager m_audioMng;
-    private RequestManager m_requestMng;
+    public UIManager UIMng;
+    public AudioManager AudioMng;
+    public RequestManager RequestMng;
 
 
     private void Awake ()
@@ -37,26 +37,26 @@ public class GameFacade : MonoBehaviour {
 
     private void InitManager()
     {
-        m_uiMng = new UIManager(this);
-        m_audioMng = new AudioManager(this);
-        m_requestMng = new RequestManager(this);
+        UIMng = new UIManager(this);
+        AudioMng = new AudioManager(this);
+        RequestMng = new RequestManager(this);
 
-        m_uiMng.OnInit();
-        m_audioMng.OnInit();
-        m_requestMng.OnInit();
+        UIMng.OnInit();
+        AudioMng.OnInit();
+        RequestMng.OnInit();
     }
 
     private void UpdateManager()
     {
-        m_uiMng.Update();
-        m_audioMng.Update();
-        m_requestMng.Update();
+        UIMng.Update();
+        AudioMng.Update();
+        RequestMng.Update();
     }
 
     private void DestoryManager()
     {
-        m_uiMng.OnDestroy();
-        m_audioMng.OnDestroy();
-        m_requestMng.OnDestroy();
+        UIMng.OnDestroy();
+        AudioMng.OnDestroy();
+        RequestMng.OnDestroy();
     }
 }
