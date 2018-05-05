@@ -28,7 +28,6 @@ public class UIManager: BaseManager
     private Stack<BasePanel> panelStack;
     private MessagePanel msgPanel;
     private UIPanelType panelTypeToPush = UIPanelType.None;
-
     public UIManager(GameFacade facade) : base(facade)
     {
         ParseUIPanelTypeJson();
@@ -169,5 +168,11 @@ public class UIManager: BaseManager
     {
         StartPanel panel = GetPanel(UIPanelType.Start) as StartPanel;
         panel.SetServer(name, color);
+    }
+
+    public void SelectedType(E_CHARACTER_TYPE type)
+    {
+        CharacterSelectPanel panel = GetPanel(UIPanelType.CharacterSelect) as CharacterSelectPanel;
+        panel.SelectedType(type);
     }
 }
